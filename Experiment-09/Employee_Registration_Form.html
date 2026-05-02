@@ -1,0 +1,57 @@
+<!-- Create Employee Registration webpage using HTML form objects. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Employee Registration Form </title>
+    </head>        
+        <body>
+            <h1> Employee Registration Form </h1>
+
+            <form>
+                <!-- Name -->
+                 <label> Name: </label><br>
+                 <input type = "text" name = name placeholder="Enter your name" required pattern="[A-Za-z]{3,}"><br><br>
+                 
+                <!-- Email -->
+                 <label> Email: </label><br>
+                 <input type = "email" name = Email placeholder=" Enter email" required > <br><br>
+
+                <!-- Password -->
+                  <label> Password: </label><br>
+                  <input type = " text" name  = password placeholder=" Enter your password" required pattern ="?=.*[A-Za-z](?=.*[0-9]).{8,}"> <br><br>
+
+                <!-- Gender -->
+                 <label> Gender: <label><br>
+                    <input type = "radio" name = gender value="male" > Male<br>
+                    <input type = "radio" name = gender value=" female"> Female<br><br>
+
+                <!-- Department   -->
+                 <label> Department: </label><br>
+                 <select name="Department" required>
+                     <option> HR </option>
+                     <option> IT </option>
+                     <option> Sales </option>
+                     <option> Marketing </option>
+                 </select><br><br>
+
+                <!-- Skills -->
+                 <label> Skills: </label><br>
+                 <input type="checkbox"  name= "skills" value="Java">Java <br>
+                 <input type="checkbox" name = "skills" value=" Python">Python <br>
+                 <input type="checkbox" name = "skills" value="C++">C++ <br><br>
+
+                <!-- Address -->
+                 <label> Address: </label><br>
+                 <textarea name = "address" required minlength="10" 
+                 Address must be atleast 10 characters > </textarea><br><br>
+
+                <!-- Date of Birth  -->
+                 <label> Date of Birth:</label><br>
+                 <input type="date" name="dob" required> <br><br>
+
+                 <!-- buttons -->
+                  <input type="submit" value="Register">
+                  <input type="reset" value="clear">
+        </body>
+</html>
