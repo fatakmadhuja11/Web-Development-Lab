@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f3e7ff, #ffffff);
+    color: #333;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+header:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #6a0dad;
+    font-size: 36px;
+}
+
+header p {
+    color: #555;
+}
+
+/* Sections */
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(106, 13, 173, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(106, 13, 173, 0.4);
+}
+
+/* Top glowing line */
+section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #6a0dad, #b266ff);
+    top: 0;
+    left: -100%;
+    transition: 0.4s;
+}
+
+section:hover::before {
+    left: 0;
+}
+
+/* Headings */
+h2 {
+    color: #6a0dad;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Animated underline */
+h2::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #6a0dad;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+section:hover h2::after {
+    width: 50%;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+    transition: 0.2s;
+}
+
+/* List hover */
+li:hover {
+    color: #6a0dad;
+    transform: translateX(6px);
+}
+
+/* Paragraph hover */
+p:hover {
+    color: #6a0dad;
+}
+
+/* Remove HR */
+hr {
+    display: none;
+}
