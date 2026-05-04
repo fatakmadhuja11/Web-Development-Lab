@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Experiments</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2, #6dd5ed);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+header h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Glass Cards */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: 0.4s;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* Hover Glow */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* Text */
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+/* Button */
+.btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ff4e8c, #ff1e56);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌐 Web Development Experiments</h1>
+  <p>All Practical Assignments</p>
+  <p>Roll No: 87</p>
+</header>
+
+<div class="container">
+
+  <div class="card"><h2>Experiment 1</h2><p>Basic HTML</p><a href="Experiment-01/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 2</h2><p>Static Web Page</p><a href="Experiment-02/StaticWebPage.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 3</h2><p>Text Formatting</p><a href="Experiment-03/TextFormatting.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 4</h2><p>List Tags</p><a href="Experiment-04/List.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 5</h2><p>Image Tag</p><a href="Experiment-05/Image.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 6</h2><p>Layout Design</p><a href="Experiment-06/main.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 7</h2><p>Link Tag</p><a href="Experiment-07/Link_Tag.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 8</h2><p>Time Table</p><a href="Experiment-08/TimeTable.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 9</h2><p>Employee Form</p><a href="Experiment-09/Employee_Registration_Form.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 10</h2><p>Resume</p><a href="Experiment-10/Resume.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 11</h2><p>XML File</p><a href="Experiment-11/Books.xml" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 12</h2><p>Transform XML to XSLT</p><a href="Experiment-12/cdcatlog_output.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 13</h2><p>XSLT & Conditional statement</p><a href="Experiment-13/students_output.html" class="btn" target="_blank">Open</a></div>
+
+</div>
+
+<footer>
+  © 2026 Web Development Lab | Roll No: 87
+</footer>
+
+</body>
+</html
